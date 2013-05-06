@@ -1,0 +1,2 @@
+debian/bin/bytebard usr/bin
+src/bytebard usr/lib/bytebar
