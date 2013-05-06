@@ -1,6 +1,6 @@
-bitbar (0.4.0~dfsg-1) unstable; urgency=low
+bytebar (0.4.0~dfsg-1) unstable; urgency=low
 
-  [ Balthazar ]
+  [ Bytebar ]
   * Initial release.
 
- -- Balthazar <balthazar@yandex.ru>  Mon, 15 Apr 2013 22:15:22 +0100
+ -- Bytebar <bytebar@mail.com>  Sun, 5 May 2013 19:22:15 -0600
