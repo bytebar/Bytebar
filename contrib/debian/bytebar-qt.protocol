@@ -1,6 +1,6 @@
 [Protocol]
-exec=bitbar-qt '%u'
-protocol=bitbar
+exec=bytebar-qt '%u'
+protocol=bytebar
 input=none
 output=none
 helper=true
