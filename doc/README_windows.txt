@@ -1,5 +1,6 @@
-BitBar 0.4.0 BETA
+ByteBar 0.4.0 BETA
 
+Copyright (c) 2013 ByteBar Developers
 Copyright (c) 2013 BitBar Developers
 Copyright (c) 2011-2013 PPCoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
@@ -20,9 +21,9 @@ Setup
 -----
 After completing windows setup then run windows command line (cmd)
   cd daemon
-  bitbard
-You would need to create a configuration file bitbar.conf in the default
-wallet directory. Grant access to bitbard.exe in anti-virus and firewall
+  bytebard
+You would need to create a configuration file bytebar.conf in the default
+wallet directory. Grant access to bytebard.exe in anti-virus and firewall
 applications if necessary.
 
 The software automatically finds other nodes to connect to.  You can
@@ -36,10 +37,10 @@ Upgrade
 -------
 All you existing coins/transactions should be intact with the upgrade.
 To upgrade from 0.2.x, first backup wallet
-bitbard backupwallet <destination_backup_file>
-Then shutdown bitbard by
-bitbard stop
-Start up the new bitbard (0.3.0).
+bytebard backupwallet <destination_backup_file>
+Then shutdown bytebard by
+bytebard stop
+Start up the new bytebard (0.3.0).
 
 -------------------
 NovaCoin 0.4.0 BETA
