@@ -12,22 +12,22 @@ DEB_INSTALL_MANPAGES_bitbard += debian/manpages/*
 	dh --with bash-completion $@
 
 override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix bitbard
+	cd src; $(MAKE) -f makefile.unix bytebard
 	$(MAKE)
 
 override_dh_auto_clean:
-	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f bitbar-qt; fi
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f bytebar-qt; fi
 	cd src; $(MAKE) -f makefile.unix clean
 
 override_dh_auto_configure:
-	qmake bitbar-qt.pro USE_QRCODE=1
+	qmake bytebar-qt.pro USE_QRCODE=1
 
 override_dh_auto_test:
-	cd src; $(MAKE) -f makefile.unix test_bitbar
-	src/test_bitbar
+	cd src; $(MAKE) -f makefile.unix test_bytebar
+	src/test_bytebar
 
 # Ensure wrapper is set executable
-binary-post-install/bitbard:
-	chmod +x $(cdbs_curdestdir)usr/bin/bitbard
-binary-post-install/bitbar-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/bitbar-qt
+binary-post-install/bytebard:
+	chmod +x $(cdbs_curdestdir)usr/bin/bytebard
+binary-post-install/bytebar-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/bytebar-qt
