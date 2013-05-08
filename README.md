@@ -1,3 +1,3 @@
-BitBar official development tree
+ByteBar official development tree
 
-Based on NovaCoin
+Based on NovaCoin and forked from BitBar
