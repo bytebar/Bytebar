@@ -263,7 +263,7 @@ void ThreadIRCSeed2(void* parg)
             strMyName = strprintf("x%"PRI64u"", GetRand(1000000000));
 
         Send(hSocket, strprintf("NICK %s\r", strMyName.c_str()).c_str());
-        Send(hSocket, strprintf("USER %s 8 * : BitBar - www.bitbar.biz \r", strMyName.c_str()).c_str());
+        Send(hSocket, strprintf("USER %s 8 * : ByteBar - www.bytebar.org \r", strMyName.c_str()).c_str());
 
         int nRet = RecvUntil(hSocket, " 004 ", " 433 ");
         if (nRet != 1)
@@ -302,16 +302,16 @@ void ThreadIRCSeed2(void* parg)
         }
 
         if (fTestNet) {
-            Send(hSocket, "JOIN #bitbarTEST\r");
-            Send(hSocket, "WHO #bitbarTEST\r");
+            Send(hSocket, "JOIN #bytebarTEST\r");
+            Send(hSocket, "WHO #bytebarTEST\r");
         } else {
-            // randomly join #bitbar00-#bitbar05
+            // randomly join #bytebar00-#bytebar05
             // int channel_number = GetRandInt(5);
 
             // Channel number is always 0 for initial release
             int channel_number = 0;
-            Send(hSocket, strprintf("JOIN #bitbar%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #bitbar%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("JOIN #bytebar%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #bytebar%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();
